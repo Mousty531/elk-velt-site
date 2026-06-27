@@ -1,0 +1,256 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inventaire | La Logistique Elk Velt Inc.</title>
+  <meta name="description" content="Consultez l'inventaire de véhicules d'occasion de La Logistique Elk Velt Inc.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=21">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accueil La Logistique Elk Velt Inc.">
+      <img class="brand-logo" src="assets/logo-elk-velt-officiel.png?v=3" alt="La Logistique Elk Velt Inc.">
+      <small>Vente de véhicules d'occasion et de pièces autos</small>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a class="active" href="inventaire.html">Véhicules</a>
+      <a href="pieces.html">Pièces</a>
+      <a href="exportation.html">Exportation sur mesure</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <p class="eyebrow">Véhicules d'occasion</p>
+      <h1>Inventaire disponible</h1>
+      <p>Une sélection de véhicules réellement vendus ou disponibles, avec photos et informations essentielles.</p>
+      <div class="page-actions">
+        <a class="button primary" href="https://wa.me/15818996665?text=Bonjour%2C%20je%20cherche%20un%20v%C3%A9hicule%20d'occasion." target="_blank" rel="noopener">Demander un véhicule</a>
+        <a class="button outline" href="exportation.html#demande-export">Recherche sur mesure</a>
+        <a class="button outline" href="#tucson-vendu">Voir le Tucson vendu</a>
+        <a class="button outline" href="#seltos-vendu">Voir le Seltos vendu</a>
+        <a class="button outline" href="#mazda3-vendue">Voir la Mazda3 vendue</a>
+      </div>
+    </section>
+
+    <section class="inventory-tools" aria-label="Filtres d'inventaire">
+      <label>
+        <span>Recherche</span>
+        <input id="vehicleSearch" type="search" placeholder="Modèle, usage ou mot-clé">
+      </label>
+      <label>
+        <span>Marque</span>
+        <select id="vehicleType">
+          <option value="all">Tous les véhicules</option>
+          <option value="hyundai">Hyundai</option>
+          <option value="kia">Kia</option>
+          <option value="mazda">Mazda</option>
+        </select>
+      </label>
+      <label>
+        <span>Statut de disponibilité</span>
+        <select id="vehicleStatus">
+          <option value="available">Tous les véhicules</option>
+          <option value="canada">Disponible Canada</option>
+          <option value="export">Disponible Exportation</option>
+          <option value="both">Canada + Exportation</option>
+          <option value="sold">Vendu</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="inventory-grid" id="inventoryGrid">
+      <article id="tucson-vendu" class="vehicle-card vehicle-card-featured" data-type="hyundai" data-status="sold" data-show-default="true" data-keywords="hyundai tucson 2025 vga accidenté vendu pièces canada exportation awd 6015 km gris">
+        <div class="vehicle-media vehicle-photo-media">
+          <img src="assets/vehicles/hyundai-tucson-2025-vga-front-1.png" alt="Hyundai Tucson 2025 VGA vue avant">
+          <span class="availability-badge availability-badge-sold"><span></span>Vendu</span>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-topline">
+            <span>Année</span>
+            <strong>2025</strong>
+          </div>
+          <h2>Hyundai Tucson 2025 VGA</h2>
+          <p>Véhicule accidenté vendu au Canada. Destination recommandée : pièces au Canada ou exportation, selon vérification et besoins du client.</p>
+          <div class="availability-detail">
+            <span class="availability-badge availability-badge-sold"><span></span>Vendu</span>
+            <p><strong>Statut de disponibilité :</strong> Véhicule déjà vendu au prix de 10 500 $ CAD.</p>
+          </div>
+
+          <dl class="vehicle-specs">
+            <div><dt>NIV</dt><dd>5NMJBCDE4SH549113</dd></div>
+            <div><dt>Kilométrage</dt><dd>6 015 km</dd></div>
+            <div><dt>Transmission</dt><dd>Automatique</dd></div>
+            <div><dt>Traction</dt><dd>AWD</dd></div>
+            <div><dt>Moteur</dt><dd>2.5 L 4 cylindres essence</dd></div>
+            <div><dt>Couleur</dt><dd>Gris</dd></div>
+            <div><dt>Carrosserie</dt><dd>VUS 4 portes</dd></div>
+            <div><dt>Équipement</dt><dd>Bluetooth, régulateur de vitesse, roues 17 po</dd></div>
+          </dl>
+
+          <div class="vehicle-condition">
+            <h3>Informations importantes</h3>
+            <ul>
+              <li>VGA / véhicule accidenté.</li>
+              <li>Dommages principaux : côté droit.</li>
+              <li>Dommages secondaires : côté gauche.</li>
+              <li>Autres dommages indiqués : avant et témoin moteur.</li>
+              <li>Idéal pour pièces au Canada ou exportation.</li>
+            </ul>
+          </div>
+
+          <div class="vehicle-gallery" aria-label="Photos du Hyundai Tucson 2025 VGA">
+            <img src="assets/vehicles/hyundai-tucson-2025-vga-front-2.png" alt="Hyundai Tucson 2025 dommage avant">
+            <img src="assets/vehicles/hyundai-tucson-2025-vga-rear-side.png" alt="Hyundai Tucson 2025 dommage côté arrière">
+            <img src="assets/vehicles/hyundai-tucson-2025-vga-interior.png" alt="Hyundai Tucson 2025 intérieur">
+            <img src="assets/vehicles/hyundai-tucson-2025-vga-odometer.png" alt="Hyundai Tucson 2025 odomètre">
+            <img src="assets/vehicles/hyundai-tucson-2025-vga-engine.png" alt="Hyundai Tucson 2025 compartiment moteur">
+          </div>
+
+          <a class="text-link" href="https://wa.me/15818996665?text=Bonjour%2C%20je%20veux%20une%20recherche%20pour%20un%20Hyundai%20Tucson%20VGA%20ou%20un%20v%C3%A9hicule%20similaire." target="_blank" rel="noopener">Demander un véhicule similaire</a>
+        </div>
+      </article>
+
+      <article id="seltos-vendu" class="vehicle-card vehicle-card-featured" data-type="kia" data-status="sold" data-show-default="true" data-keywords="kia seltos 2022 vga accidenté vendu pièces canada exportation awd 39094 km gris">
+        <div class="vehicle-media vehicle-photo-media">
+          <img src="assets/vehicles/kia-seltos-2022-vga-front-1.png" alt="Kia Seltos 2022 VGA vue avant">
+          <span class="availability-badge availability-badge-sold"><span></span>Vendu</span>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-topline">
+            <span>Année</span>
+            <strong>2022</strong>
+          </div>
+          <h2>Kia Seltos 2022 VGA</h2>
+          <p>Véhicule accidenté vendu au Canada. Destination recommandée : pièces au Canada ou exportation.</p>
+          <div class="availability-detail">
+            <span class="availability-badge availability-badge-sold"><span></span>Vendu</span>
+            <p><strong>Statut de disponibilité :</strong> Véhicule déjà vendu au prix de 6 650 $ CAD.</p>
+          </div>
+
+          <dl class="vehicle-specs">
+            <div><dt>NIV</dt><dd>KNDERCAA3N7299244</dd></div>
+            <div><dt>Kilométrage</dt><dd>39 094 km</dd></div>
+            <div><dt>Transmission</dt><dd>Automatique</dd></div>
+            <div><dt>Traction</dt><dd>AWD</dd></div>
+            <div><dt>Moteur</dt><dd>2.0 L 4 cylindres essence</dd></div>
+            <div><dt>Couleur</dt><dd>Gris</dd></div>
+            <div><dt>Carrosserie</dt><dd>VUS 4 portes</dd></div>
+            <div><dt>Équipement</dt><dd>Bluetooth, air climatisé, régulateur de vitesse, sièges présents</dd></div>
+          </dl>
+
+          <div class="vehicle-condition">
+            <h3>Informations importantes</h3>
+            <ul>
+              <li>VGA / véhicule accidenté.</li>
+              <li>Dommages principaux : côté gauche.</li>
+              <li>Dommages secondaires : suspension.</li>
+              <li>Autres dommages indiqués : arrière gauche, avant gauche, avant, capot et pneus côté gauche.</li>
+              <li>Démarre : oui.</li>
+              <li>Clé disponible : oui.</li>
+              <li>Sacs gonflables : endommagés.</li>
+              <li>Idéal pour pièces au Canada ou exportation.</li>
+            </ul>
+          </div>
+
+          <div class="vehicle-gallery" aria-label="Photos du Kia Seltos 2022 VGA">
+            <img src="assets/vehicles/kia-seltos-2022-vga-left-damage.png" alt="Kia Seltos 2022 dommage côté gauche">
+            <img src="assets/vehicles/kia-seltos-2022-vga-front-2.png" alt="Kia Seltos 2022 vue avant rapprochée">
+            <img src="assets/vehicles/kia-seltos-2022-vga-rear-side.png" alt="Kia Seltos 2022 vue arrière côté">
+            <img src="assets/vehicles/kia-seltos-2022-vga-front-interior.png" alt="Kia Seltos 2022 intérieur avant">
+            <img src="assets/vehicles/kia-seltos-2022-vga-rear-interior.png" alt="Kia Seltos 2022 intérieur arrière">
+            <img src="assets/vehicles/kia-seltos-2022-vga-odometer.png" alt="Kia Seltos 2022 odomètre">
+            <img src="assets/vehicles/kia-seltos-2022-vga-engine.png" alt="Kia Seltos 2022 compartiment moteur">
+            <img src="assets/vehicles/kia-seltos-2022-vga-vin.png" alt="Kia Seltos 2022 étiquette NIV">
+            <img src="assets/vehicles/kia-seltos-2022-vga-key.png" alt="Kia Seltos 2022 clé">
+          </div>
+
+          <a class="text-link" href="https://wa.me/15818996665?text=Bonjour%2C%20je%20veux%20une%20recherche%20pour%20un%20Kia%20Seltos%20VGA%20ou%20un%20v%C3%A9hicule%20similaire." target="_blank" rel="noopener">Demander un véhicule similaire</a>
+        </div>
+      </article>
+
+      <article id="mazda3-vendue" class="vehicle-card vehicle-card-featured" data-type="mazda" data-status="sold" data-show-default="true" data-keywords="mazda mazda3 2021 vga accidenté vendu pièces canada exportation fwd 19606 km rouge">
+        <div class="vehicle-media vehicle-photo-media">
+          <img src="assets/vehicles/mazda3-2021-vga-front-side.png" alt="Mazda3 2021 VGA vue avant côté">
+          <span class="availability-badge availability-badge-sold"><span></span>Vendu</span>
+        </div>
+        <div class="vehicle-body">
+          <div class="vehicle-topline">
+            <span>Année</span>
+            <strong>2021</strong>
+          </div>
+          <h2>Mazda3 2021 VGA</h2>
+          <p>Véhicule accidenté vendu au Canada. Destination recommandée : pièces au Canada ou exportation.</p>
+          <div class="availability-detail">
+            <span class="availability-badge availability-badge-sold"><span></span>Vendu</span>
+            <p><strong>Statut de disponibilité :</strong> Véhicule déjà vendu au prix de 3 650 $ CAD.</p>
+          </div>
+
+          <dl class="vehicle-specs">
+            <div><dt>NIV</dt><dd>JM1BPACL2M1346342</dd></div>
+            <div><dt>Kilométrage</dt><dd>19 606 km</dd></div>
+            <div><dt>Transmission</dt><dd>Automatique</dd></div>
+            <div><dt>Traction</dt><dd>FWD</dd></div>
+            <div><dt>Moteur</dt><dd>2.5 L 4 cylindres essence</dd></div>
+            <div><dt>Couleur</dt><dd>Rouge</dd></div>
+            <div><dt>Carrosserie</dt><dd>Hatchback 4 portes</dd></div>
+            <div><dt>Équipement</dt><dd>Bluetooth, roues en alliage, sièges présents</dd></div>
+          </dl>
+
+          <div class="vehicle-condition">
+            <h3>Informations importantes</h3>
+            <ul>
+              <li>VGA / véhicule accidenté.</li>
+              <li>Dommages principaux : arrière.</li>
+              <li>Dommages secondaires : avant.</li>
+              <li>Autres dommages indiqués : avant droit, côté droit, arrière droit et intérieur.</li>
+              <li>Démarre : oui.</li>
+              <li>Clé disponible : oui.</li>
+              <li>Sacs gonflables : endommagés.</li>
+              <li>Idéal pour pièces au Canada ou exportation.</li>
+            </ul>
+          </div>
+
+          <div class="vehicle-gallery" aria-label="Photos de la Mazda3 2021 VGA">
+            <img src="assets/vehicles/mazda3-2021-vga-front.png" alt="Mazda3 2021 vue avant">
+            <img src="assets/vehicles/mazda3-2021-vga-side.png" alt="Mazda3 2021 vue côté">
+            <img src="assets/vehicles/mazda3-2021-vga-rear-side.png" alt="Mazda3 2021 vue arrière côté">
+            <img src="assets/vehicles/mazda3-2021-vga-rear.png" alt="Mazda3 2021 vue arrière">
+            <img src="assets/vehicles/mazda3-2021-vga-front-interior.png" alt="Mazda3 2021 intérieur avant">
+            <img src="assets/vehicles/mazda3-2021-vga-rear-interior.png" alt="Mazda3 2021 intérieur arrière">
+            <img src="assets/vehicles/mazda3-2021-vga-odometer.png" alt="Mazda3 2021 odomètre">
+            <img src="assets/vehicles/mazda3-2021-vga-engine.png" alt="Mazda3 2021 compartiment moteur">
+            <img src="assets/vehicles/mazda3-2021-vga-vin.png" alt="Mazda3 2021 étiquette NIV">
+            <img src="assets/vehicles/mazda3-2021-vga-key.png" alt="Mazda3 2021 clé">
+          </div>
+
+          <a class="text-link" href="https://wa.me/15818996665?text=Bonjour%2C%20je%20veux%20une%20recherche%20pour%20une%20Mazda3%20VGA%20ou%20un%20v%C3%A9hicule%20similaire." target="_blank" rel="noopener">Demander un véhicule similaire</a>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 La Logistique Elk Velt Inc. Tous droits réservés.</p>
+    <p>581-899-6665 | lalogistique@elkvelt.com | <a href="https://www.facebook.com/profile.php?id=61585780712416" target="_blank" rel="noopener">Facebook</a> | 846 rue Paul-Lussier, Sainte-Hélène-de-Bagot, QC J0H 1M0, Canada</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/15818996665" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp">
+    WhatsApp
+  </a>
+
+  <script src="assets/main.js?v=35" charset="utf-8"></script>
+</body>
+</html>
+
+
+

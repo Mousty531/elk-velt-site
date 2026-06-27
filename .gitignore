@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.env
+.env.*
+*.local
+*.tmp
+*.temp
+tmp/
+temp/
+.cache/
+.vercel/
+.DS_Store
+Thumbs.db
+

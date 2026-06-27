@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Administration des pièces | La Logistique Elk Velt Inc.</title>
+  <meta name="robots" content="noindex,nofollow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=29">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accueil La Logistique Elk Velt Inc.">
+      <img class="brand-logo" src="assets/logo-elk-velt-officiel.png?v=3" alt="La Logistique Elk Velt Inc.">
+      <small>Administration de l'inventaire</small>
+    </a>
+    <nav class="site-nav" aria-label="Navigation administrateur">
+      <a href="pieces.html">Voir la page publique</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <p class="eyebrow">Espace administrateur</p>
+      <h1>Inventaire Nissan Kicks 2025</h1>
+      <p>Vue interne des prix de vente et des Quantités. Prix sujets à changement selon disponibilité.</p>
+    </section>
+
+    <section class="admin-parts-panel">
+      <div class="admin-table-wrap">
+        <table class="admin-parts-table">
+          <thead>
+            <tr>
+              <th>pièce</th>
+              <th>OEM</th>
+              <th>Prix</th>
+              <th>Reçue</th>
+              <th>Vendue</th>
+              <th>Disponible</th>
+              <th>Statut</th>
+            </tr>
+          </thead>
+          <tbody id="adminPartsTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/parts-inventory.js?v=7" charset="utf-8"></script>
+  <script src="assets/main.js?v=35" charset="utf-8"></script>
+</body>
+</html>
+
+
+

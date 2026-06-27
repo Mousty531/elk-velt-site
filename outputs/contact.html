@@ -1,0 +1,112 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | La Logistique Elk Velt Inc.</title>
+  <meta name="description" content="Contactez La Logistique Elk Velt Inc. pour une demande de transport, de véhicule commercial ou de service logistique.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=20">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accueil La Logistique Elk Velt Inc.">
+      <img class="brand-logo" src="assets/logo-elk-velt-officiel.png?v=3" alt="La Logistique Elk Velt Inc.">
+      <small>Vente de véhicules d'occasion et de pièces autos</small>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="inventaire.html">Véhicules</a>
+      <a href="pieces.html">Pièces</a>
+      <a href="exportation.html">Exportation sur mesure</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header contact-heading">
+      <p class="eyebrow">Contact</p>
+      <h1>Parlons de votre prochain besoin logistique.</h1>
+      <p>Demandez une soumission, vérifiez la disponibilité d'un véhicule ou planifiez une discussion avec l'équipe.</p>
+      <div class="page-actions">
+        <a class="button primary" href="https://wa.me/15818996665" target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+        <a class="button outline" href="carte-electronique.html">Ouvrir la carte électronique</a>
+      </div>
+    </section>
+
+    <section class="contact-layout">
+      <div class="contact-details">
+        <article>
+          <h2>Coordonnées</h2>
+          <p><strong>Téléphone</strong><br><a href="tel:+15818996665">581-899-6665</a></p>
+          <p><strong>Courriel</strong><br><a href="mailto:lalogistique@elkvelt.com">lalogistique@elkvelt.com</a></p>
+          <p><strong>WhatsApp</strong><br><a href="https://wa.me/15818996665" target="_blank" rel="noopener">Écrire sur WhatsApp</a></p>
+          <p><strong>Facebook</strong><br><a href="https://www.facebook.com/profile.php?id=61585780712416" target="_blank" rel="noopener">Voir notre profil Facebook</a></p>
+          <p><strong>Carte électronique</strong><br><a href="carte-electronique.html">Afficher et partager les coordonnées</a></p>
+          <p><strong>Adresse</strong><br>846 rue Paul-Lussier<br>Sainte-Hélène-de-Bagot, QC<br>J0H 1M0<br>Canada</p>
+        </article>
+        <article>
+          <h2>Heures</h2>
+          <p>Lundi au vendredi<br>8 h 00 à 17 h 30</p>
+          <p>Demandes urgentes<br>Réponse selon disponibilité opérationnelle.</p>
+        </article>
+      </div>
+
+      <form class="contact-form" id="contactForm">
+        <label>
+          <span>Nom complet</span>
+          <input name="name" type="text" autocomplete="name" required>
+        </label>
+        <label>
+          <span>Entreprise</span>
+          <input name="company" type="text" autocomplete="organization">
+        </label>
+        <label>
+          <span>Courriel</span>
+          <input name="email" type="email" autocomplete="email" required>
+        </label>
+        <label>
+          <span>Téléphone</span>
+          <input name="phone" type="tel" autocomplete="tel">
+        </label>
+        <label class="full">
+          <span>Type de demande</span>
+          <select name="request" required>
+            <option value="">Sélectionner</option>
+            <option>Achat de véhicule</option>
+            <option>Demande de pièce automobile</option>
+            <option>Exportation sur mesure</option>
+            <option>Recherche de véhicule</option>
+            <option>Autre demande</option>
+          </select>
+        </label>
+        <label class="full">
+          <span>Message</span>
+          <textarea name="message" rows="6" required placeholder="Décrivez brièvement le véhicule recherché, la livraison ou le besoin opérationnel."></textarea>
+        </label>
+        <button class="button primary full" type="submit">Envoyer la demande</button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 La Logistique Elk Velt Inc. Tous droits réservés.</p>
+    <p>581-899-6665 | lalogistique@elkvelt.com | <a href="https://www.facebook.com/profile.php?id=61585780712416" target="_blank" rel="noopener">Facebook</a> | 846 rue Paul-Lussier, Sainte-Hélène-de-Bagot, QC J0H 1M0, Canada</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/15818996665" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp">
+    WhatsApp
+  </a>
+
+  <script src="assets/main.js?v=35" charset="utf-8"></script>
+</body>
+</html>
+
+
+

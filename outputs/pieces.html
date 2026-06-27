@@ -1,0 +1,98 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pièces | La Logistique Elk Velt Inc.</title>
+  <meta name="description" content="Demandez des pièces automobiles en transit vers le Canada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles.css?v=30">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Accueil La Logistique Elk Velt Inc.">
+      <img class="brand-logo" src="assets/logo-elk-velt-officiel.png?v=3" alt="La Logistique Elk Velt Inc.">
+      <small>Vente de véhicules d'occasion et de pièces autos</small>
+    </a>
+    <button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Navigation principale">
+      <a href="index.html">Accueil</a>
+      <a href="inventaire.html">Véhicules</a>
+      <a class="active" href="pieces.html">Pièces</a>
+      <a href="exportation.html">Exportation sur mesure</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-header parts-heading">
+      <p class="eyebrow">Pièces automobiles</p>
+      <h1>Consultez nos pièces automobiles</h1>
+      <p>Trouvez des pièces présentées en photo et réservez celles qui correspondent à votre véhicule.</p>
+      <p class="price-note">Prix sujets à changement selon disponibilité.</p>
+      <p class="final-sale-note"><strong>Vente finale :</strong> les pièces automobiles achetées ne sont ni retournables ni échangeables. Veuillez confirmer le numéro OEM et le véhicule compatible avant l'achat, sous réserve des obligations légales applicables.</p>
+      <div class="page-actions">
+        <a class="button primary" href="#demande-piece">Demander une pièce</a>
+        <a class="button outline" href="https://wa.me/15818996665?text=Bonjour%2C%20je%20cherche%20une%20pi%C3%A8ce%20automobile." target="_blank" rel="noopener">Écrire sur WhatsApp</a>
+      </div>
+    </section>
+
+    <section class="parts-layout">
+      <div class="parts-main">
+        <section class="parts-panel parts-inventory-tools">
+          <div class="section-heading compact">
+            <p class="eyebrow">Inventaire de pièces</p>
+            <h2>Recherche de pièces</h2>
+            <p>Recherchez par numéro OEM, nom de pièce, marque, modèle ou année.</p>
+          </div>
+          <label class="parts-search-label" for="partsSearch">
+            <span>Recherche</span>
+            <input id="partsSearch" type="search" placeholder="Ex. phare, pare-chocs, grille, OEM, marque ou modèle">
+          </label>
+        </section>
+
+        <div id="partsInventory" class="parts-inventory-results"></div>
+        <p id="partsEmptyState" class="parts-empty-state" hidden>Aucune pièce ne correspond à votre recherche.</p>
+      </div>
+
+      <form class="parts-request-form" id="partsRequestForm">
+        <span id="demande-piece" class="anchor-target"></span>
+        <h2>Demande de pièce</h2>
+        <label><span>Nom</span><input name="name" type="text" autocomplete="name" required></label>
+        <label><span>Téléphone</span><input name="phone" type="tel" autocomplete="tel" required></label>
+        <label><span>Courriel</span><input name="email" type="email" autocomplete="email" required></label>
+        <label><span>Année</span><input name="year" type="text" inputmode="numeric" placeholder="2025" required></label>
+        <label><span>Modèle</span><input name="model" type="text" placeholder="Ex. VUS, berline, camionnette ou modèle précis..." required></label>
+        <label><span>VIN</span><input name="vin" type="text" autocomplete="off" required></label>
+        <label class="full"><span>Pièce recherchée</span><textarea name="part" rows="5" placeholder="Ex. phare avant droit, pare-chocs arrière, grille..." required></textarea></label>
+        <button class="button primary full" type="submit">Envoyer la demande</button>
+        <p class="form-note" id="partsFormNote" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <dialog class="part-detail-dialog" id="partDetailDialog">
+    <button class="part-detail-close" id="partDetailClose" type="button" aria-label="Fermer la fiche">×</button>
+    <div class="part-detail-content" id="partDetailContent"></div>
+  </dialog>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 La Logistique Elk Velt Inc. Tous droits réservés.</p>
+    <p>581-899-6665 | lalogistique@elkvelt.com | <a href="https://www.facebook.com/profile.php?id=61585780712416" target="_blank" rel="noopener">Facebook</a> | 846 rue Paul-Lussier, Sainte-Hélène-de-Bagot, QC J0H 1M0, Canada</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/15818996665" target="_blank" rel="noopener" aria-label="Écrire sur WhatsApp">
+    WhatsApp
+  </a>
+
+  <script src="assets/parts-inventory.js?v=7" charset="utf-8"></script>
+  <script src="assets/main.js?v=35" charset="utf-8"></script>
+</body>
+</html>
+
+
+

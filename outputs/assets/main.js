@@ -187,7 +187,7 @@ function partMatchesSearch(part, term) {
 
 function statusClass(status) {
   if (status === "En stock") return "available";
-  if (status.includes("transit")) return "ordered";
+  if (status.includes("commande")) return "ordered";
   if (status === "Rupture de stock") return "out";
   return "special-order";
 }
@@ -211,8 +211,8 @@ function createPartCard(part) {
   const price = Number.isFinite(part.salePriceCad)
     ? `<p class="part-price"><strong>Prix :</strong> ${formatCad(part.salePriceCad)}</p>`
     : `<p class="part-price-on-request">Prix sur demande</p>`;
-  const quantityLabel = status.includes("transit") ? "Quantité en transit" : "Quantité reçue";
-  const availableLabel = status.includes("transit") ? "Quantité à réserver" : "Quantité disponible";
+  const quantityLabel = status.includes("commande") ? "Quantité commandée" : "Quantité reçue";
+  const availableLabel = status.includes("commande") ? "Quantité à réserver" : "Quantité disponible";
   const stock = part.specialOrder
     ? ""
     : `<p><strong>${quantityLabel} :</strong> ${part.quantityReceived}</p>
@@ -247,8 +247,8 @@ function openPartDetail(partId) {
   const available = getPartQuantityAvailable(part);
   const sold = getPartQuantitySold(part);
   const status = getPartStatus(part);
-  const detailQuantityLabel = status.includes("transit") ? "Quantité en transit" : "Quantité reçue";
-  const detailAvailableLabel = status.includes("transit") ? "Quantité à réserver" : "Quantité disponible";
+  const detailQuantityLabel = status.includes("commande") ? "Quantité commandée" : "Quantité reçue";
+  const detailAvailableLabel = status.includes("commande") ? "Quantité à réserver" : "Quantité disponible";
 
   partDetailContent.innerHTML = `
     <img src="${part.image}" alt="${part.description} ${part.compatibility}">
@@ -262,7 +262,7 @@ function openPartDetail(partId) {
       <p><strong>Quantité vendue :</strong> ${sold}</p>
       <p><strong>${detailAvailableLabel} :</strong> ${available}</p>
       <span class="status ${statusClass(status)}">${status}</span>
-      <p class="price-change-note">Ces pièces sont en transit vers le Canada. Prix sujets à changement selon disponibilité.</p>
+      <p class="price-change-note">Ces pièces sont en commande. Prix sujets à changement selon disponibilité.</p>
       <p class="final-sale-detail"><strong>Vente finale :</strong> cette pièce n'est ni retournable ni échangeable. Confirmez le numéro OEM et le véhicule compatible avant l'achat, sous réserve des obligations légales applicables.</p>
       <a class="button primary part-request-button" href="#demande-piece" data-part="${part.description} - ${part.compatibility} - OEM ${part.oem}">Demander cette pièce</a>
     </div>

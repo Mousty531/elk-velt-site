@@ -13,7 +13,7 @@
     image: "assets/parts/part-01.jpg",
     quantityReceived: 2,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-headlight-right",
@@ -29,7 +29,7 @@
     image: "assets/parts/part-02.jpg",
     quantityReceived: 2,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-front-bumper-without-hole",
@@ -45,7 +45,7 @@
     image: "assets/parts/part-03.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-front-bumper-moulding",
@@ -61,7 +61,7 @@
     image: "assets/parts/part-04.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-front-bumper-trailer-cover",
@@ -77,7 +77,7 @@
     image: "assets/parts/part-05.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-front-license-plate",
@@ -93,7 +93,7 @@
     image: "assets/parts/part-06.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-grille-sr",
@@ -109,7 +109,7 @@
     image: "assets/parts/part-07.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-grille-sl",
@@ -125,7 +125,7 @@
     image: "assets/parts/part-08.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-radiator-support-down",
@@ -141,7 +141,7 @@
     image: "assets/parts/part-09.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-front-side-bumper-lh",
@@ -157,7 +157,7 @@
     image: "assets/parts/part-10.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-front-side-bumper-rh",
@@ -173,7 +173,7 @@
     image: "assets/parts/part-11.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-rear-bumper-without-hole",
@@ -189,7 +189,7 @@
     image: "assets/parts/part-12.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-rear-bumper-moulding",
@@ -205,7 +205,7 @@
     image: "assets/parts/part-13.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-rear-bumper-trailer-cover",
@@ -221,7 +221,7 @@
     image: "assets/parts/part-14.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-rear-side-bumper-lh",
@@ -237,7 +237,7 @@
     image: "assets/parts/part-15.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-rear-side-bumper-rh",
@@ -253,7 +253,7 @@
     image: "assets/parts/part-16.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-front-bumper-bracket-lh",
@@ -269,7 +269,7 @@
     image: "assets/parts/part-17.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-front-bumper-bracket-rh",
@@ -285,7 +285,7 @@
     image: "assets/parts/part-18.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-rear-bumper-bracket-lh",
@@ -301,7 +301,7 @@
     image: "assets/parts/part-19.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   },
   {
     id: "nissan-kicks-2025-rear-bumper-bracket-rh",
@@ -317,8 +317,9 @@
     image: "assets/parts/part-20.jpg",
     quantityReceived: 5,
     quantitySold: 0,
-    status: "En transit vers le Canada"
+    status: "En commande"
   }
 ];
+
 
 
